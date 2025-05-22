@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        *{
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    font-size:20px;
+    padding: 5px 2px;
+    display:flex;
+      width: 400px;
+}
+
+#div1{
+  border:2px solid black;
+    margin-left:10px;
+    margin-right: 10px;
+    height: 150px;
+    overflow: hidden;
+}
+
+div:nth-child(2){
+ color:red;
+ margin:2px 5px 0px 5px;
+}
+
+div>div:last-child{
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div>div:first-of-type{
+    font-size:10px;
+}
+
+div>div:first-child{
+    font-size:14px;
+    cursor:cell;
+}
+
+div,p{
+    cursor:grab;
+}
+
+div + p{
+    font-style: italic;
+}
+
+div ~ p{
+    font-weight: bolder;
+    opacity:20%;
+    filter:blur(1px);
+}
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    
+        <div class="t1" id="div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, eius! Placeat enim incidunt similique,
+           </div>
+
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, eius! Placeat enim incidunt similique,
+           </div>
+
+        <div >Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, eius! Placeat enim incidunt similique,
+           </div>
+           <p>hello</p>
+           <p>hanji</p>
+
+    </div>
+
+    
+</body>
+
+</html>

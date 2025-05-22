@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed and Sticky Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 2000px;
+            background-color: azure;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 700px;
+            height: 500px;
+            overflow-y: auto;
+            border: 2px solid black;
+            margin: 30px auto;
+            background-color: antiquewhite;
+            padding: 10px;
+        }
+
+        p {
+            width: 200px;
+            height: 60px;
+            border: 2px solid red;
+            margin: 20px 0;
+            padding: 10px;
+        }
+
+        .p1 {
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            background-color: yellow;
+        }
+
+        .p2 {
+            position: sticky;
+            top: 0; /* Required for sticky to work */
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="p1">Fixed</p> 
+        <p class="p2">Sticky</p> 
+        <p class="p3">Normal</p> 
+        <p class="p4">Normal</p> 
+        <p>Extra content to enable scroll</p>
+        <p>Extra content to enable scroll</p>
+        <p>Extra content to enable scroll</p>
+        <p>Extra content to enable scroll</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute postion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            position: relative;
+            display: flex;
+            width: 700px;
+            height: 300px;
+            border: 2px solid black;
+            margin: 15px 15px;
+            background-color: antiquewhite;
+        }
+
+        p{
+            width: 70px;
+            height: 40px;
+            border: 2px solid red;
+            margin: 20px;
+            padding: 5px;
+        }
+
+        .p1{
+
+            background-color: aquamarine;
+        }
+        .p2{
+             position: absolute; 
+            top: 40px; 
+            background-color: red;
+        }
+        .p3{
+              
+            background-color: yellow;
+        }
+        .p4{
+            
+            background-color: peru;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+       <p class="p1"></p> 
+       <p class="p2"></p> 
+       <p class="p3"></p> 
+       <p class="p4"></p> 
+
+    </div>
+</body>
+</html>

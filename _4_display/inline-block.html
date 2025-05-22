@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline-block preperty applied to elements</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .maxcontainer{
+            display: flex;
+            color: red;
+        }
+
+        .container {
+            
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 15px 15px;
+            background-color: antiquewhite;
+        }
+
+        .span1 {
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            margin:10px;
+            padding: 3px;
+             border: 2px solid rgb(109, 196, 126);
+        }
+        .container2 {
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 15px 15px;
+            background-color: hsl(174, 46%, 86%);
+        }
+
+        .span2 {
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            margin:10px;
+            padding: 3px;
+             border: 2px solid rgb(109, 196, 126);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="maxcontainer">
+         <div class="container">
+
+        <span class="span1">hello</span>
+        <span class="span1">welcome</span>
+
+    </div>
+
+    <div class="container2">
+
+        <span class="span2">hello</span>
+        <span class="span2">welcome</span>
+
+    </div>
+    </div>
+   
+</body>
+
+</html>
