@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative units in html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 98.5vw;
+            height: 98.5vh;
+            border: 5px solid dodgerblue;
+        }
+
+        .child1 {
+            width: 80%;
+            height: 20%;
+
+
+            font-size: 2em;
+            border: 3px solid rgb(118, 232, 92);
+            margin: 5px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .child1_1 {
+            width: 60%;
+            height: 30%;
+
+
+            font-size: 1rem;
+            border: 3px solid rgb(232, 93, 114);
+            margin: 5px;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child1">
+            hello world!
+            <div class="child1_1"> welcome !!!!</div>
+        </div>
+    </div>
+</body>
+
+</html>

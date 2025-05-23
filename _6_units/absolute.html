@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute units in css</title>
+
+    <style>
+*{
+   margin: 0; 
+}
+.container{
+    display: flex;
+    flex-direction: column;
+
+width: 98.5vw;
+height:98.5vh;
+border:5px solid yellow;
+opacity: 0.5;
+}
+
+div{
+    display: inline;
+    text-align: center;
+}
+.child1{
+font-size: 1cm;
+margin: 5px 5px;
+border:2px solid rgb(15, 38, 120);
+}
+.child2{
+font-size: 5mm;
+margin: 5px 5px;
+border:2px solid rgb(15, 38, 120);
+}
+.child3{
+font-size: 1in;
+margin: 5px 5px;
+border:2px solid rgb(15, 38, 120);
+}
+.child4{
+font-size: 20px;
+margin: 5px 5px;
+border:2px solid rgb(15, 38, 120);
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="child1">cm</div>
+        <div class="child2">mm</div>
+        <div class="child3">in</div>
+        <div class="child4">px</div>
+    </div>
+</body>
+</html>
