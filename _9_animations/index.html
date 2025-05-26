@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in css</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 98.9vw;
+            height: 98.7vh;
+            background-color: #080808;
+            border: 2px solid red;
+
+        }
+
+        .box1 {
+            margin: 5px;
+            width: 150px;
+            height: 40px;
+            background-color: rgb(13, 13, 207);
+            border: 2px solid rgba(231, 231, 21, 1);
+
+
+            animation-name: rightmovement;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes rightmovement {
+
+            from {
+                position: relative;
+                top: 0;
+                left: 40px;
+                ;
+            }
+
+            to {
+                position: relative;
+                top: 0;
+                left: 1500px;
+                ;
+            }
+        }
+
+        .box2 {
+            margin: 5px;
+            width: 150px;
+            height: 40px;
+            background-color: rgb(13, 13, 207);
+            border: 2px solid rgba(231, 231, 21, 1);
+            position: relative;
+            animation-name: leftmovement;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-timing-function: ease;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+
+
+        }
+
+        @keyframes leftmovement {
+            from {
+                position: relative;
+                top: 590px;
+                left: 1500px;
+            }
+
+            to {
+                position: relative;
+                top: 590px;
+                left: 40px;
+            }
+        }
+
+        .circle {
+
+            margin: 5px;
+            width: 80px;
+            height: 70px;
+            background-color: rgb(13, 13, 207);
+            border: 2px solid rgba(231, 231, 21, 1);
+            border-radius: 80%;
+            /* animation: 5s ease-out 2s infinite alternate none none circlemotion; */
+            animation-name: circlemotion;
+             animation-duration: 7s;
+            animation-delay: 1s;
+            animation-timing-function:linear;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes circlemotion {
+            0% {
+                position: relative;
+                top: 10px;
+                left: 40px;
+            }
+
+            30% {
+                position: relative;
+                top: 570px;
+                left: 1550px;
+            }
+
+            60% {
+                position: relative;
+                top: 570px;
+                left: 40px;
+            }
+
+            80%{
+                position: relative;
+                top: 10px;
+                left: 1550px;
+
+            }
+
+            100% {
+                position: relative;
+                top: 10px;
+                left: 40px;
+            }
+        }
+
+            .circle2 {
+
+            margin: 5px;
+            width: 80px;
+            height: 70px;
+            background-color: rgb(13, 13, 207);
+            border: 2px solid rgba(231, 231, 21, 1);
+            border-radius: 80%;
+            /* animation: 5s ease-out 2s infinite alternate none none circlemotion; */
+            animation-name: circlemotion2;
+             animation-duration: 7s;
+            animation-delay: 1s;
+            animation-timing-function:linear;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes circlemotion2 {
+            0% {
+                position: relative;
+                top: 0%;
+                left: 1550px;
+            }
+
+            30% {
+                position: relative;
+                top: 450px;
+                left: 40px;
+            }
+
+            60% {
+                position: relative;
+                top: 450px;
+                left: 1550px;
+            }
+
+            80%{
+                position: relative;
+                top: 0%;
+                left: 40px;
+
+            }
+
+            100% {
+                position: relative;
+                top: 0%;
+                left: 1550px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="circle"></div>
+      
+        <div class="box2"></div>
+          <div class="circle2"></div>
+
+    </div>
+</body>
+
+</html>
