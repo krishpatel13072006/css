@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queris</title>
+
+    <style>
+*{
+margin: 0;
+padding: 0;
+}
+
+.container{
+    margin: 5px;
+    padding: 5px;
+    background-color: antiquewhite;
+    display: flex;
+}
+.box1{
+     margin: 5px;
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+.box2{
+     margin: 5px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(216, 219, 24);
+}
+.box3{
+     margin: 5px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(184, 184, 196);
+}
+.box4{
+     margin: 5px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(196, 98, 127);
+}
+
+@media only screen and (max-width:399px)
+{
+    .container{
+        background-color: rgb(113, 180, 121);
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+
+@media(min-width:400px)and (max-width:500px)
+{
+    .container{
+        background-color: aquamarine;
+        flex-direction: column-reverse;
+         align-items:center;
+        flex-wrap: wrap;
+       
+    }
+}
+
+@media only screen and (min-width:500px)
+{
+    .container{
+        background-color: rgb(125, 60, 179);
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+
+    </style>
+
+</head>
+<body>
+  
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+</body>
+</html>
