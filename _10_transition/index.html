@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trnasition in css</title>
+
+    
+    <style>
+        /* @keyframes movement {
+           from {
+            position: relative;
+            top:0;
+            left: 40px;
+            }
+            to{
+                left: 1550px;
+            }
+        } */
+        .container {
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            align-items: center;
+
+
+            width: 700px;
+            height: 140px;
+            border: 2px solid black;
+            background-color: rgb(147, 180, 147);
+
+
+
+            transition:
+                width 5s linear 2s,
+                height 5s ease-in-out 3s,
+                border 1s linear 2s,
+                justify-content 15s linear 2s;
+            background-color: 10s ease-in 3s;
+            /* transition: width;
+            transition-duration: 5s;
+            transition-delay: 2s;
+            transition-timing-function: ease-in; */
+
+
+             /* animation-name:movement;
+             animation-duration: 5s;
+             animation-delay: 3s;
+             animation-direction: alternate ;
+             animation-timing-function: ease-in-out;
+             animation-iteration-count: infinite; */
+        }
+
+        .container:hover {
+            width: 1400px;
+            height: 80vh;
+            border: 5px solid black;
+            background-color: aqua;
+
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+        }
+
+        .box{
+            margin: 5px;
+            width: 50px;
+            height: 50px;
+             border: 3px solid black;
+             transition: 
+             width 5s ease 2s,
+             height 5s ease 2s;
+
+           
+             
+        }
+
+        
+
+        .box:hover{
+            width: 120px;
+            height: 90px;
+            background-color: blue;
+            border-radius: 70%;
+            position: relative;
+
+             
+            
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+         <div class="box"></div>
+          <div class="box"></div>
+           <div class="box"></div>
+            <div class="box"></div>
+             <div class="box"></div>
+              <div class="box"></div>
+         <div class="box" id="box2"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
